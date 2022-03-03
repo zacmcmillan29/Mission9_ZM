@@ -10,7 +10,7 @@ using WaterProject.Models;
 
 namespace Bookstore.Controllers
 {
-    public class CheckoutController : Controller
+    public class PurchaseController : Controller
     {
 
         //p
@@ -19,7 +19,7 @@ namespace Bookstore.Controllers
 
 
         //constructor
-        public CheckoutController(IPurchaseRepository temp, Basket b)
+        public PurchaseController(IPurchaseRepository temp, Basket b)
         {
             repo = temp;
             basket = b;
