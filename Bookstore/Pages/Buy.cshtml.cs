@@ -14,16 +14,18 @@ namespace Bookstore.Pages
         private IBookstoreRepository repo { get; set; }
 
 
+        //here are the variable CLASSES, but we need to actually set them to values later
+        public Basket basket { get; set; }
+        public string ReturnUrl { get; set; }
+
+
         public BuyModel (IBookstoreRepository temp, Basket b)
         {
             repo = temp;
             basket = b;
         }
 
-        public Basket basket { get; set; }
-
-
-        public string ReturnUrl { get; set; }
+       
 
 
 

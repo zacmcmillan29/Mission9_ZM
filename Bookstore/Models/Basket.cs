@@ -62,7 +62,7 @@ namespace Bookstore.Models
     //line item (just one)
     public class BasketLineItem
     {
-        [Key]
+        //[Key]
         public int LineID { get; set; }
         //INSTANCE OF A PROJECT, not the type/class itself!
         public Book Book { get; set; }
