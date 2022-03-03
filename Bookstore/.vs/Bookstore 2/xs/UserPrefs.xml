@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{D7B2C54B-4314-49BC-9394-75C3AF2E4144}|Default">
+  <MonoDevelop.Ide.ItemProperties.Bookstore PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/PurchaseRepositoryInfo/EFPurchaseRepository.cs">
+    <Files>
+      <File FileName="Models/PurchaseRepositoryInfo/IPurchaseRepository.cs" Line="14" Column="1" />
+      <File FileName="Models/Purchase.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="Views/Purchase/Checkout.cshtml" />
+      <File FileName="Controllers/PurchaseController.cs" />
+      <File FileName="Pages/PurchaseConfirmed.cshtml" />
+      <File FileName="Pages/PurchaseConfirmed.cshtml.cs" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/PurchaseRepositoryInfo/EFPurchaseRepository.cs" Line="28" Column="59" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bookstore 2" expanded="True">
+            <Node name="Bookstore" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Components" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="PurchaseRepositoryInfo" expanded="True">
+                  <Node name="EFPurchaseRepository.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="PurchaseConfirmed.cshtml" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Purchase" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

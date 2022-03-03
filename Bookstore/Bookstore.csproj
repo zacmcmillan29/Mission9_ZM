@@ -23,6 +23,7 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\Types\" />
     <None Remove="Pages\" />
+    <None Remove="Views\Purchase\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -38,6 +39,7 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Types\" />
     <Folder Include="Pages\" />
+    <Folder Include="Views\Purchase\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

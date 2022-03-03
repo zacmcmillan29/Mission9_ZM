@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WaterProject.Models;
 
 namespace Bookstore
 {
@@ -43,6 +44,8 @@ namespace Bookstore
             //add the ability to reach the repositories we built!!
             services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
             //this is wehre the BuyBook will go or whatever it is!
+            services.AddScoped<IPurchaseRepository, EFPurchaseRepository>();
+
 
             services.AddRazorPages();
 
