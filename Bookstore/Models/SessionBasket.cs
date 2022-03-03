@@ -2,13 +2,14 @@
 using System.Text.Json.Serialization;
 using Bookstore.Infrastructure;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Bookstore.Models
 {
     public class SessionBasket : Basket
     {
        //return instance of a basket!
-       public static Basket GetBasket()
+       public static Basket GetBasket(IServiceProvider services)
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
 
