@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace Bookstore.Models
@@ -30,6 +31,24 @@ namespace Bookstore.Models
 
         }
 
+
+        //removing one item
+        public virtual void RemoveItem(Book book)
+        {
+            Items.RemoveAll(x => x.Book.BookId == book.BookId);
+        }
+
+
+
+        //clearing one item
+        public virtual void ClearBasket()
+        {
+            Items.Clear();
+        }
+
+
+
+
         public double CalculateTotal()
         {
             double sum = Items.Sum(x => x.Quantity * 25);
@@ -43,6 +62,7 @@ namespace Bookstore.Models
     //line item (just one)
     public class BasketLineItem
     {
+        [Key]
         public int LineID { get; set; }
         //INSTANCE OF A PROJECT, not the type/class itself!
         public Book Book { get; set; }
