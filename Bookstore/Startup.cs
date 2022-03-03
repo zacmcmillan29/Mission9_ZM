@@ -40,8 +40,9 @@ namespace Bookstore
             });
 
 
-            //add the ability to reach the repository we built
+            //add the ability to reach the repositories we built!!
             services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
+            //this is wehre the BuyBook will go or whatever it is!
 
             services.AddRazorPages();
 

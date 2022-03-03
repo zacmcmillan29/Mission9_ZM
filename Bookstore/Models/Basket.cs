@@ -10,7 +10,7 @@ namespace Bookstore.Models
         //part 1 declares, 2nd= instantiates
         public List<BasketLineItem> Items { get; set; } = new List<BasketLineItem>();
 
-        public void AddItem(Book book, int qty)
+        public virtual void AddItem(Book book, int qty)
         {
             BasketLineItem line = Items
                 .Where(p => p.Book.BookId == book.BookId)
