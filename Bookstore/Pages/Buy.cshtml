@@ -26,7 +26,7 @@
             <td>@i.Book.Title</td>
             <td>@i.Quantity</td>
             <td>25</td>
-            <td>@(i.Quantity * 25)</td>
+            <td>@((i.Quantity * 25).ToString("c"))</td>
 
             @*//this is deleting a specfic item*@
             <td class="text-center">

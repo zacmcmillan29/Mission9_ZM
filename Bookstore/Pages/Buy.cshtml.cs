@@ -14,9 +14,10 @@ namespace Bookstore.Pages
         private IBookstoreRepository repo { get; set; }
 
 
-        public BuyModel (IBookstoreRepository temp)
+        public BuyModel (IBookstoreRepository temp, Basket b)
         {
             repo = temp;
+            basket = b;
         }
 
         public Basket basket { get; set; }
@@ -51,5 +52,12 @@ namespace Bookstore.Pages
 
 
         //later add OnPostRemove here
+        public IActionResult OnPostRemove(int bookId, string returnUrl)
+        {
+            //comes from the Basket Class!
+            basket.RemoveItem(basket.Items.First(x => x.Book.BookId == bookId).Book);
+
+            return RedirectToPage(new { ReturnUrl = returnUrl });
+        }
     }
 }
