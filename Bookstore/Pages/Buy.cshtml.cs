@@ -23,9 +23,12 @@ namespace Bookstore.Pages
 
 
         public string ReturnUrl { get; set; }
+
+
+
         public void OnGet(string returnUrl)
         {
-            basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
+            //basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
             ReturnUrl = returnUrl ?? "/"; //or if it's null, just go back home!
         }
 
@@ -35,15 +38,18 @@ namespace Bookstore.Pages
 
             //setup basket first
             //basket = new Basket();
-            basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
+            //basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
             basket.AddItem(b, 1);
 
             //setting the json when they click donate!
             //saves from page to page
-            HttpContext.Session.SetJson("basket", basket);
+            //HttpContext.Session.SetJson("basket", basket);    --> this is done in the SessionBasket!
 
             //return URL
             return RedirectToPage(new { ReturnUrl = returnUrl });
         }
+
+
+        //later add OnPostRemove here
     }
 }
