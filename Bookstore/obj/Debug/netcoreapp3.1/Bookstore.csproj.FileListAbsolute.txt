@@ -160,3 +160,4 @@
 /Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/Mission8/Mission8_ZM/Bookstore/obj/Debug/netcoreapp3.1/Bookstore.dll
 /Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/Mission8/Mission8_ZM/Bookstore/obj/Debug/netcoreapp3.1/Bookstore.pdb
 /Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/Mission Assignments/Mission8/Mission8_ZM/Bookstore/obj/Debug/netcoreapp3.1/Bookstore.genruntimeconfig.cache
+/Users/zacmcmillan/Library/Mobile Documents/com~apple~CloudDocs/IS junior core/WINTER 2022/IS 413/BookstoreProjHolder/Bookstore/Bookstore/bin/Debug/netcoreapp3.1/appsettings.Development 2.json
